@@ -1,6 +1,12 @@
 import regex as re
 
 
+def get_max_size(grid):
+    max_c = max(x for x, y in grid)
+    max_r = max(y for x, y in grid)
+    return max_r, max_c
+
+
 def get_s_grid(grid):
     min_c = min(x for x, y in grid)
     max_c = max(x for x, y in grid)

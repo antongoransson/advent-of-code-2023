@@ -7,9 +7,8 @@ import sys
 year = 2023
 cj = browser_cookie3.firefox()
 if not ('.adventofcode.com' in str(cj)):
+    print(cj)
     cj = browser_cookie3.chrome()
-
-day_today = int(date.today().strftime('%d'))
 if len(sys.argv) > 1:
     day = int(sys.argv[1])
     if day < 0 or day > 31 or day > int(day_today):
