@@ -58,7 +58,6 @@ def solve_part_1(grid):
 
 def solve_part_2(grid):
     mr, mc = aoc.get_max_size(grid)
-    print(mr, mc)
     return dijkstra(grid, (0, 0), (mr, mc), True)
 
 
